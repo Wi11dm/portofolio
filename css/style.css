@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --go-purple: #5D4F85;
+    --go-cyan: #00ACD7;
+    --go-light-purple: #5DC9E2;
+    --go-light-cyan: #5DC9E2;
+    --go-dark-purple: #3C3259;
+    --go-dark-cyan: #007D9C;
+    --go-bg-light: #5DC9E2;
+}
+
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: "Sour Gummy", serif;
+}
+
+.wrapper {
+    width: 1024px;
+    margin: auto;
+    padding: 20px 0px 20px 0px;
+}
+
+/*
+* menu
+*/
+
+nav {
+    background-color: #3B3030;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav>.wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.menu {
+    width: 50%;
+}
+
+.menu>ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-between;
+}
+
+.menu>ul>li>a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo>img {
+    height: 45px;
+}
+
+/*
+* boom
+*/
+header {
+    background: url("../images/bicycle.jpg");
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: "Roboto Mono", monospace;
+    letter-spacing: 5px;
+    text-shadow: 0 0 4px #000;
+}
+
+.header-opacity {
+    background-color: #3B3030;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header-jumbotron {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-jumbotron>h4 {
+    color: #CBD2A4;
+    font-size: 2rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-jumbotron>h5 {
+    color: #fff;
+    margin: 0px;
+    padding: 5px;
+    font-size: 3rem;
+    line-height: 4rem;
+    text-transform: uppercase;
+}
+
+.header-jumbotron>P {
+    padding: 5px;
+    margin: 0px 5px 20px 5px;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    text-shadow: none;
+}
+
+.button {
+    background-color: #CBD2A4;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    font-family: "Roboto Mono", monospace;
+}
+
+.button-xl {
+    font-size: 1.4rem;
+    padding: 20px;
+}
+
+/*
+* statistic
+*/
+#statistic {
+    background-color: #9A7E6F;
+    color: #fff;
+    font-family: "Sour Gummy", serif;
+}
+
+#statistic>.wrapper {
+    padding: 50px;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#statistic>.wrapper>div {
+    text-align: center;
+}
+
+#statistic>.wrapper>div>p {
+    font-size: 3.5rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+#statistic>.wrapper>div>p>i {
+    margin-right: 10px;
+    font-size: 3.5rem;
+}
+
+#statistic>.wrapper>div>small {
+    font-size: 1.5rem;
+}
+
+/*
+* oops
+*/
+#work {
+    background-color: #3B3030;
+    color: #fff;
+}
+
+#work>.wrapper {
+    padding: 50px 0px 50px 0px;
+}
+
+#work>.wrapper>h4 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Sour Gummy", serif;
+}
+
+#work>.wrapper>p {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 50px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 50px;
+}
+
+.grid>.item {
+    border: 1px solid #666;
+    background-color: #9A7E6F;
+    border-radius: 5px;
+    position: relative;
+}
+
+.grid>.item>img {
+    width: 60%;
+    display: flex;
+    position: relative;
+    top: 30px;
+    left: 60px;
+}
+
+.grid>.item>.item-detail {
+    padding: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 80%;
+    font-family: "Roboto Mono", monospace;
+}
+
+.grid>.item>.item-detail>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*
+* About
+*/
+
+#about {
+    background-color: #FFF1DB;
+    color: #333;
+}
+
+#about>.wrapper {
+    padding: 50px 0px 50px 0px;
+}
+
+#about>.wrapper>h4 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Sour Gummy", serif;
+}
+
+#about>.wrapper>div {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about>.wrapper>div>.foto {
+    width: 30%;
+}
+
+#about>.wrapper>div>.foto>img {
+    max-width: 100%;
+}
+
+#about>.wrapper>div>.desc {
+    width: 70%;
+    padding: 20px;
+    margin: 10px;
+    background-color: #9A7E6F;
+    color: #fff;
+    border-radius: 10px;
+}
+
+#about>.wrapper>div>.desc>.social {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+#about>.wrapper>div>.desc>.social>a {
+    color: #00adb5;
+}
+
+/*
+* Ability
+*/
+#ability {
+    background-color: #9A7E6F;
+    color: #333;
+}
+
+#ability>.wrapper {
+    padding: 50px 0px 50px 0px;
+}
+
+#ability>.wrapper>h4 {
+    text-align: center;
+    font-size: 2.3rem;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Sour Gummy", serif;
+}
+
+/* Progress */
+
+
+.progress-bar {
+    background-color: var(--go-cyan);
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    background-color: red;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+
+}
