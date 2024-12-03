@@ -18,6 +18,7 @@ body {
     padding: 0px;
     font-size: 16px;
     font-family: "Sour Gummy", serif;
+    scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -475,4 +476,20 @@ button.hamburger-menu>i.icon-close {
     .menu {
         display: none;
     }
-}
+
+    .tampil {
+        display: inline;
+    }
+
+    .tampil>ul {
+        flex-direction: column;
+        background-color: #000;
+        width: 100%;
+        position: fixed;
+        top: 85px;
+        left: 0;
+    }
+
+    .tampil>ul>li {
+        padding: 10px 20px 10px 20px;
+    }
