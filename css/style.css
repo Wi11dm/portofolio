@@ -286,7 +286,7 @@ a {
 }
 
 #about>.wrapper>div>.desc {
-    width: 70%;
+    width: 80%;
     padding: 20px;
     margin: 10px;
     background-color: #9A7E6F;
@@ -296,7 +296,7 @@ a {
 
 #about>.wrapper>div>.desc>.social {
     display: flex;
-    width: 40%;
+    width: 60%;
     justify-content: space-between;
     font-size: 1.3rem;
 }
@@ -321,7 +321,7 @@ a {
     text-align: center;
     font-size: 2.3rem;
     margin: 0px;
-    padding: 0px;
+    padding: 10px 10px 50px 10px;
     font-family: "Sour Gummy", serif;
 }
 
